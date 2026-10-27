@@ -187,3 +187,86 @@ h2 {
         padding: 30px;
     }
 }
+
+/* Rodapé */
+.rodape {
+    background-color: #6d4b38; /* Fundo marrom escuro */
+    padding: 60px 20px;
+    color: #e8d5b5; /* Texto claro */
+    margin-top: 50px;
+}
+
+.rodape-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Bloco da Marca */
+.rodape-marca {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-rodape {
+    width: 80px; /* Ajuste o tamanho da logo */
+    height: auto;
+}
+
+.rodape-marca h3 {
+    font-family: 'Playfair Display', serif;
+    color: #d4a373; /* Tom dourado/marrom claro */
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.rodape-marca p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #b59b8a;
+}
+
+/* Blocos de Informação */
+.rodape-info h4, 
+.rodape-social h4 {
+    color: #d4a373;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.rodape-info p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Ícone Social */
+.rodape-social a img {
+    width: 40px; /* Tamanho do ícone */
+    transition: transform 0.3s ease;
+}
+
+.rodape-social a:hover img {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 850px) {
+    .rodape-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .rodape-marca {
+        flex-direction: column;
+    }
+}
