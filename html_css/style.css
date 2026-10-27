@@ -187,3 +187,90 @@ h2 {
         padding: 30px;
     }
 }
+
+/*  Sobre Nós  */
+.secao-sobre {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-sobre {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #5c3a21;
+    margin-bottom: 40px;
+}
+
+.sobre-conteudo {
+    display: flex;
+    gap: 40px;
+    align-items: center;   
+}
+
+.sobre-imagem {
+    flex: 1;
+    max-width: 480px;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    height: 550px;          /* ajusta esse número até bater */
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+
+.sobre-textos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sobre-historia {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.destaque {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.destaque img {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.destaque > div {
+    flex: 1;
+}
+
+.destaque h3 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #6d4b38;
+    font-size: 1.15rem;
+    margin-bottom: 6px;
+}
+
+.destaque p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .sobre-conteudo {
+        flex-direction: column;
+    }
+    .titulo-sobre {
+        font-size: 1.8rem;
+    }
+}
