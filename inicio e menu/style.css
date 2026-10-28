@@ -1,0 +1,312 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: "DM Serif Display", italic, serif;
+        background-color: #f4ebdc;
+        color: #6b432c;
+        }
+
+    a{
+        text-decoration: none;
+        color: #6b432c;
+    }
+    ul{
+        list-style: none;
+    }
+
+    .cabecalho{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 5%;
+        background-color: #f4ebdc;
+    }
+
+    .logo{
+        width: 180px;
+        height: auto;
+        display: block;
+    }
+
+    .cabecalho nav {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .cabecalho nav ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .marca {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+    .marca span {
+    font-family: "Dynalight", serif;
+    font-size: 24px;
+    font-style: italic;
+    color: #6b432c;
+}
+
+    .introducao{
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .introducao h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .introducao p {
+    font-family: "DM Serif Display", serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+    .carrosel{
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        height: 400px;
+        margin: 20px auto;
+        overflow: hidden;
+    }
+
+    .carrosel-faixa{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s ease-in-out;
+        
+    }
+
+    .slide {
+    flex: 0 0 100%;
+    min-width: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .slide img {
+    width: 100%;
+    height: 350px; 
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
+
+    .slide figcaption {
+    margin-top: 15px;
+    color: #6b432c;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.seta {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background-color: rgba(75, 45, 28, 0.75);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.seta.anterior {
+    left: 15px;
+}
+
+.seta.proxima {
+    right: 15px;
+}
+
+.seta:hover {
+    background-color: #6b432c;
+}
+
+.indicadores {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+section header {
+    padding: 50px 5% 30px 5%;
+    text-align: center;
+    position: relative;
+}
+
+section header span {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #6b432c;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+section header span::before {
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #6b432c;
+}
+
+section header h2:nth-of-type(1) {
+    font-size: 42px;
+    color: #ffffff;
+    font-weight: normal;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+section header h2:nth-of-type(2) {
+    font-size: 38px;
+    color: #c49a65;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.itens-cardapio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 40px 20px;
+}
+
+.itens-cardapio article {
+    background-color: #fff8f0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.itens-cardapio figure img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.itens-cardapio figcaption {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #6b432c;
+}
+
+.itens-cardapio p {
+    font-size: 14px;
+    color: #5c4033;
+    margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+    .cabecalho {
+        flex-direction: column;
+        gap: 15px;
+        padding: 16px;
+    }
+
+    .logo {
+        width: 110px;
+    }
+
+    .marca {
+        gap: 10px;
+    }
+
+    .marca span {
+        font-size: 18px;
+    }
+
+    .cabecalho nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .introducao {
+        padding: 24px 16px;
+    }
+
+    .introducao h1 {
+        font-size: 28px;
+    }
+
+    .introducao p {
+        font-size: 16px;
+    }
+
+    .carrosel {
+        height: 260px;
+        margin: 16px auto;
+    }
+
+    .slide figcaption {
+        width: 75%;
+        font-size: 14px;
+    }
+
+    .seta {
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+    }
+
+    .seta.anterior {
+        left: 8px;
+    }
+
+    .seta.proxima {
+        right: 8px;
+    }
+}
+
+
+@media (max-width: 380px) {
+    .cabecalho nav ul {
+        gap: 8px;
+    }
+
+    .cabecalho nav a {
+        font-size: 13px;
+    }
+
+    .carrosel {
+        height: 220px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
