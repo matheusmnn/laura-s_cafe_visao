@@ -1,61 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <link rel="stylesheet" href="style.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laura's Cafe</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- ===== CABEÇALHO ===== -->
     <header class="cabecalho">
         <div class="marca">
-        <img class="logo" src="Logo.svg" alt = "Logo da Laura's Cafe">
-        <span>Laura's Cafe</span>
+            <img class="logo" src="assets/logo/Logo.svg" alt="Logo da Laura's Cafe">
+            <span>Laura's Cafe</span>
         </div>
 
-    <nav>
-        <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#cardapio">Nosso Cardápio</a></li>
-            <li><a href="#sobre">Sobre Nós</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li><a href="#reserva">Fazer Reserva</a></li>
-        </ul>
-    </nav>  
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#cardapio">Nosso Cardápio</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#reserva">Fazer Reserva</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <section id = "inicio">
+
+        <!-- ===== INÍCIO / HERO ===== -->
+        <section id="inicio">
             <header class="introducao">
-            <hr/>
-            <h1>Bem-vindo ao Laura's Cafe</h1>
-            <p>Desfrute de nossos deliciosos cafés e lanches!</p>
+                <hr/>
+                <h1>Bem-vindo ao Laura's Cafe</h1>
+                <p>Desfrute de nossos deliciosos cafés e lanches!</p>
             </header>
             <div class="carrosel">
                 <div class="carrosel-faixa">
                     <figure class="slide">
-                        <img src="imagem1inicio.svg" alt="Café servido no Laura's Cafe">
+                        <img src="assets/img/imagem1inicio.svg" alt="Café servido no Laura's Cafe">
                         <figcaption>
                             <h3>Aconchego em cada detalhe</h3>
                         </figcaption>
                     </figure>
 
                     <figure class="slide">
-                        <img src="imagem2inicio.svg" alt="Café preparado artesanalmente">
+                        <img src="assets/img/imagem2inicio.svg" alt="Café preparado artesanalmente">
                         <figcaption>
                             <h3>Onde cada visita vira um bom momento</h3>
                         </figcaption>
                     </figure>
 
                     <figure class="slide">
-                        <img src="imagem3inicio.svg" alt="Café preparado artesanalmente">
+                        <img src="assets/img/imagem3inicio.svg" alt="Café preparado artesanalmente">
                         <figcaption>
                             <h3>Desperte seus sentidos com nossos aromas</h3>
                         </figcaption>
                     </figure>
 
                     <figure class="slide">
-                        <img src="imagem4inicio.svg" alt="Café preparado artesanalmente">
+                        <img src="assets/img/imagem4inicio.svg" alt="Café preparado artesanalmente">
                         <figcaption>
                             <h3>O acompanhamento perfeito para o seu café</h3>
                         </figcaption>
@@ -68,9 +77,12 @@
                 <div class="indicadores"></div>
             </div>
         </section>
+
         <hr/>
-        <section id = "cardapio">
-            <header>
+
+        <!-- ===== CARDÁPIO ===== -->
+        <section id="cardapio">
+            <header class="header-cardapio">
                 <span>Nosso Cardápio</span>
                 <h2>Menu do dia:</h2>
                 <h2>café, aconchego e bons momentos.</h2>
@@ -78,9 +90,8 @@
             <div class="itens-cardapio">
                 <article>
                     <figure>
-                        <img src="imagem1menu.svg" alt="Espresso Laura">
+                        <img src="assets/img/imagem1menu.svg" alt="Espresso Laura">
                         <figcaption>Espresso Laura</figcaption>
-
                     </figure>
                     <p>R$ 10,00</p>
                     <p>Encorpado, doce e aveludado, com notas de chocolate.</p>
@@ -88,9 +99,8 @@
 
                 <article>
                     <figure>
-                        <img src="imagem2menu.svg" alt="Cappuccino Dourado">
+                        <img src="assets/img/imagem2menu.svg" alt="Cappuccino Dourado">
                         <figcaption>Cappuccino Dourado</figcaption>
-
                     </figure>
                     <p>R$ 18,00</p>
                     <p>Cremoso e equilibrado, finalizado com canela e mel.</p>
@@ -98,9 +108,8 @@
 
                 <article>
                     <figure>
-                        <img src="imagem3menu.svg" alt="Iced Latte Baunilha">
+                        <img src="assets/img/imagem3menu.svg" alt="Iced Latte Baunilha">
                         <figcaption>Iced Latte Baunilha</figcaption>
-
                     </figure>
                     <p>R$ 20,00</p>
                     <p>Café espresso extraído na hora com leite gelado e xarope artesanal de baunilha.</p>
@@ -108,9 +117,8 @@
 
                 <article>
                     <figure>
-                        <img src="imagem4menu.svg" alt="Mocha Sensação">
+                        <img src="assets/img/imagem4menu.svg" alt="Mocha Sensação">
                         <figcaption>Mocha Sensação</figcaption>
-
                     </figure>
                     <p>R$ 22,00</p>
                     <p>Para os amantes de chocolate: espresso, leite vaporizado, calda de chocolate meio amargo e raspas de chocolate.</p>
@@ -118,22 +126,170 @@
 
                 <article>
                     <figure>
-                        <img src="imagem5menu.svg" alt="Chai Latte Especiarias">
+                        <img src="assets/img/imagem5menu.svg" alt="Chai Latte Especiarias">
                         <figcaption>Chai Latte Especiarias</figcaption>
-
                     </figure>
                     <p>R$ 16,00</p>
                     <p>Chá preto indiano infusionado com especiarias tradicionais e leite vaporizado bem cremoso, finalizado com canela.</p>
                 </article>
+            </div>
+        </section>
+
+        <!-- ===== SOBRE NÓS ===== -->
+        <section class="secao-sobre" id="sobre">
+            <div class="container">
+                <p class="label-secao">SOBRE NÓS</p>
+                <h2 class="titulo-sobre">Uma paixão que virou lugar.</h2>
+
+                <div class="sobre-conteudo">
+                    <figure class="sobre-imagem">
+                        <img src="assets/img/cafe-sobre-nos.png" alt="Preparo artesanal do café no Laura's Cafe">
+                    </figure>
+
+                    <div class="sobre-textos">
+                        <p class="sobre-historia">
+                            Laura sempre acreditou que uma boa xícara de café é capaz de
+                            transformar o dia. Depois de anos conhecendo produtores, sabores
+                            e histórias por trás de cada xícara, ela abriu as portas do
+                            Laura's Café: uma casa acolhedora onde cada pessoa é recebida pelo nome.
+                        </p>
+
+                        <div class="destaque">
+                            <img src="assets/icons/icone-cafe.png" alt="" aria-hidden="true">
+                            <div>
+                                <h3>Métodos de preparo exclusivos</h3>
+                                <p>Cada café é preparado com técnicas artesanais, do espresso extraído na medida certa aos métodos coados que realçam aromas e sabores únicos.</p>
+                            </div>
+                        </div>
+
+                        <div class="destaque">
+                            <img src="assets/icons/icone-graos.png" alt="" aria-hidden="true">
+                            <div>
+                                <h3>Origem dos grãos selecionados</h3>
+                                <p>Trabalhamos com microlotes brasileiros de origem responsável e torras frescas, desenvolvidas para revelar a doçura natural de cada grão.</p>
+                            </div>
+                        </div>
+
+                        <div class="destaque">
+                            <img src="assets/icons/icone-lugar.png" alt="" aria-hidden="true">
+                            <div>
+                                <h3>Um ambiente para ficar</h3>
+                                <p>Um refúgio aconchegante, pensado para você desacelerar e aproveitar cada momento.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTATO / RESERVA ===== -->
+        <section class="secao-contato" id="contato">
+            <div class="container">
+
+                <!-- Cartão Escuro de Informações -->
+                <div class="cartao-info">
+                    <p class="label-secao">CONTATO</p>
+                    <div class="box-marrom">
+                        <h2>Venha tomar<br><span class="texto-marron-claro">um café conosco.</span></h2>
+
+                        <div class="info-detalhes">
+                            <p class="titulo-info">FALE COM A GENTE</p>
+                            <p>(11) 98765-4321</p>
+                            <p>oi@laurascafe.com.br</p>
+                        </div>
+
+                        <div class="redes-sociais">
+                            <p class="titulo-info">REDES SOCIAIS</p>
+                            <div class="icones">
+                                <a href="https://www.instagram.com/visaojrufop/" target="_blank">
+                                    <img src="assets/logo/instagram.png" alt="logo insta">
+                                </a>
+                                <a href="https://api.whatsapp.com/send?phone=5531993327631" target="_blank">
+                                    <img src="assets/logo/whatsapp.png" alt="logo zap">
+                                </a>
+                                <a href="https://www.facebook.com/visaojrufop/" target="_blank">
+                                    <img src="assets/logo/facebook.png" alt="logo face">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulário de Reserva -->
+                <div class="area-formulario" id="reserva">
+                    <p class="label-secao">RESERVA</p>
+                    <h2>Preencha o formulário:</h2>
+
+                    <form action="#" method="POST">
+                        <div class="grupo-inputs">
+                            <div class="campo">
+                                <label for="nome">NOME:</label>
+                                <input type="text" id="nome" placeholder="Seu nome">
+                            </div>
+                            <div class="campo">
+                                <label for="email">E-MAIL:</label>
+                                <input type="email" id="email" placeholder="voce@email.com">
+                            </div>
+                            <div class="campo">
+                                <label for="telefone">TELEFONE:</label>
+                                <input type="tel" id="telefone" placeholder="(00) 00000-0000">
+                            </div>
+                            <div class="campo">
+                                <label for="reserva">RESERVA:</label>
+                                <select name="tipo de reserva" id="reserva-tipo">
+                                    <option value="" disabled selected hidden>Escolha o tipo da reserva:</option>
+                                    <option value="Mesa normal">Mesa para 4 pessoas</option>
+                                    <option value="Todas as mesas">Evento privado</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="campo campo-observacao">
+                            <label for="observacao">OBSERVAÇÃO:</label>
+                            <input type="text" id="observacao" placeholder="conte para nós...">
+                        </div>
+
+                        <button type="submit" class="btn-enviar">ENVIAR FORMULÁRIO</button>
+                    </form>
+                </div>
 
             </div>
-
-
         </section>
-    </main>
-    <footer>
 
+    </main>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer class="rodape">
+        <div class="rodape-container">
+
+            <div class="rodape-marca">
+                <img src="assets/logo/logo_laura's.png" alt="Logo Laura's Café" class="logo-rodape">
+                <div>
+                    <h3>LAURA'S CAFÉ</h3>
+                    <p>Cafés especiais, encontros e<br>afeto em cada xícara.</p>
+                </div>
+            </div>
+
+            <div class="rodape-info">
+                <h4>ENDEREÇO</h4>
+                <p>Rua das Acácias, 125<br>Centro · São Paulo — SP</p>
+            </div>
+
+            <div class="rodape-info">
+                <h4>HORÁRIO DE<br>FUNCIONAMENTO</h4>
+                <p>Seg — Sex · 8h às 19h<br>Sáb — Dom · 9h às 18h</p>
+            </div>
+
+            <div class="rodape-social">
+                <h4>ACOMPANHE</h4>
+                <a href="https://www.instagram.com/visaojrufop/" target="_blank">
+                    <img src="assets/logo/instagram.png" alt="logo-instagram">
+                </a>
+            </div>
+
+        </div>
     </footer>
-<script src="script.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
