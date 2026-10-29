@@ -65,7 +65,7 @@ html {
 .marca {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 0px;
 }
 
 .marca span {
@@ -540,7 +540,9 @@ html {
     margin-bottom: 15px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    text-align: center;
 }
+
 
 .rodape-info p {
     font-size: 0.9rem;
@@ -550,6 +552,9 @@ html {
 .rodape-social a img {
     width: 40px;
     transition: transform 0.3s ease;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .rodape-social a:hover img {
@@ -594,7 +599,8 @@ html {
     }
 
     .marca {
-        gap: 10px;
+        align-self: flex-start;
+        gap: 0px;
     }
 
     .marca span {
@@ -681,3 +687,101 @@ html {
         height: 300px;
     }
 }
+
+
+/* Ajustes para celular */
+@media (max-width: 767px) {
+
+    /* Impede que o conteúdo ultrapasse a tela */
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .secao-cardapio .label-secao {
+    padding-left: 74px;
+    }
+
+    .secao-cardapio .label-secao::before {
+    left: 20px;
+    }
+    .titulo-cardapio {
+        padding-left: 24px;
+        padding-right: 16px;
+    }
+    
+    /* Cardápio: um card por linha */
+    .itens-cardapio {
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+        max-width: 100%;
+        padding: 0 16px 30px;
+        gap: 20px;
+    }
+
+    .itens-cardapio article {
+        width: 100%;
+        min-width: 0;
+    }
+
+    /* Cabeçalho centralizado */
+    .cabecalho {
+        width: 100%;
+        align-items: center;
+    }
+
+    .cabecalho nav {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .cabecalho nav ul {
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    /* Rodapé mais compacto */
+    .rodape {
+        width: 100%;
+        margin-top: 30px;
+        padding: 30px 20px;
+    }
+
+    .rodape-container {
+        width: 100%;
+        gap: 24px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rodape-marca {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .rodape-info,
+    .rodape-social {
+        width: 100%;
+        margin: 0;
+    }
+
+    .rodape-info h4,
+    .rodape-social h4 {
+        margin-bottom: 8px;
+    }
+
+    .rodape-info p,
+    .rodape-marca p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
